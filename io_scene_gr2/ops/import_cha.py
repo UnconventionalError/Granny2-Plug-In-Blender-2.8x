@@ -276,7 +276,7 @@ def build(operator, context, slots, skin_mats):
                             float(other_values['palette1MetallicSpecular'][2]),
                             1.0,
                         ]
-                    elif derived == 'Garment':
+                    elif derived == 'Garment' or derived == 'GarmentScrolling':
                         node.derived = 'GARMENT'
                         # TODO: Read Alpha parameters from paths.json
                         new_mat.alpha_threshold = node.alpha_test_value = 0.5
